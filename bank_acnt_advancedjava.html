@@ -1,0 +1,52 @@
+<html>
+<head>
+<title> Bank </title>
+</head>
+<body>
+<script>
+
+var account(_a_h_n , bal, _a_no)
+ {
+
+this.acnt_holder_name=_a_h_n;
+var balance=bal;
+var acnt_no=_a_no;
+return 
+  {
+    withdraw:function(withdraw_amnt)
+    {
+      if(balance-withdraw_amnt < 100)
+      {
+      document.write("insufficient amount");
+      }
+      else
+	  {
+       balance -= withdraw_amnt;
+       return balance;
+      }
+    }
+    
+    deposit:function(dep_amt)
+	{
+	balance= balance+dep_amt;
+	return "remaining balance"+balance;
+	
+	}
+	account_balance:function()
+	{
+	return "remaining balance"+balance;
+	
+	}
+
+ }
+}
+
+var account=new account("deva",100000,12345678);
+account.withdraw(10000);
+account.withdraw(10000000);
+account.deposit(10000);
+document.write(account.account_balance);
+
+</script>
+</body>
+</html>
