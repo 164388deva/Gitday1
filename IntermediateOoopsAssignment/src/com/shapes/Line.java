@@ -12,11 +12,11 @@ public class Line extends Shapes{
 		System.out.println("enter x co ordinates x1 and x2");
 		int x1=sc.nextInt();
 		int x2=sc.nextInt();
-		System.out.println("enter x co ordinates y1 and y2");
+		System.out.println("enter y co ordinates y1 and y2");
 		int y1=sc.nextInt();
 		int y2=sc.nextInt();
 		
-		System.out.println("Line drawn from x coordinates "+x1+" "+x2+" and y co-ordinates"+y1+""+y2);
+		System.out.println("Line drawn from x coordinates ("+x1+", "+x2+") and y co-ordinates ("+y1+","+y2+")");
 		
 	}
 

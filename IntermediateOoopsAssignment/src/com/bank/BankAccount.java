@@ -3,7 +3,7 @@ package com.bank;
 public abstract class BankAccount {
 
 	private static int autoAccountNo;
-	private static double totalCashInBank;
+	protected static double totalCashInBank;
 	
 
 private int accountNo;

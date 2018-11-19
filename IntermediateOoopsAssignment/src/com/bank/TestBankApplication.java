@@ -1,6 +1,6 @@
 package com.bank;
 
-import com.employee.Employee;
+
 
 
 public class TestBankApplication {
@@ -14,23 +14,24 @@ public static void testSavingAccount(){
 	System.out.println("Account name is:"+savacc.getAccountHolderName());
 	System.out.println("Account no is:"+savacc.getAccountNo());
 	
-	System.out.println("Account Balance after deposit "+savacc.getAccountBalance());
-	System.out.println("Account Balance after withdraw "+savacc.getAccountBalance());
+
+	System.out.println("Total cash in bank Balance  "+savacc.getTotalCashInBank());
 }
 public static void testCurrentAccount(){
 	CurrentAccount curacc= new CurrentAccount("chandu",40000);
 	System.out.println("Account name is:"+curacc.getAccountHolderName());
 	System.out.println("Account no is:"+curacc.getAccountNo());
 
-	System.out.println("Account Balance after deposit "+curacc.getAccountBalance());
-	System.out.println("cash credit Balance after withdraw "+curacc.getcashCredit());
+	System.out.println("Account Balance "+curacc.getAccountBalance());
+	System.out.println("cash credit Balance  "+curacc.getcashCredit());
 }
 public static void main(String args[]){
 	//testBankAccountMethod();
 	testCurrentAccount();
-	double cash=Employee.getTotalSalaryOfAllEmployees();
+	testSavingAccount();
+	double cash=BankAccount. getTotalCashInBank();
 	System.out.println(cash);
-	//testSavingAccount();
+	
 }
 	
 }

@@ -16,7 +16,7 @@ public class Cube  extends Shapes{
 		System.out.println("enter hieght to draw a cube");
 		int height=sc.nextInt();
 		
-		System.out.println("Rectrangle drawn with length "+length+" and breadth"+breadth+" and height"+height);
+		System.out.println("Rectrangle drawn with length  "+length+"  and breadth"+breadth+"  and height "+ height);
 	
 	}
 

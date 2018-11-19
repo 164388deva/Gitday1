@@ -17,6 +17,7 @@ public SavingsAccount(String accountHolderName,double amount,double Fixeddeposit
 	super(accountHolderName,amount);
 	this.isSalaryAccount=true;
 	this.fixedDeposit=Fixeddeposit;
+	totalCashInBank+=Fixeddeposit;
 }
 
 public SavingsAccount(String accountHolderName,double amount,boolean isSalaryAccount,double Fixeddeposit){
@@ -25,7 +26,10 @@ public SavingsAccount(String accountHolderName,double amount,boolean isSalaryAcc
 	this.fixedDeposit=Fixeddeposit;
 }
 public double getAccountBalance() {
-	return getAccountBalance()+this.fixedDeposit;
+	return getAccountBalance();
+}
+public double getFixedDeposit() {
+	return fixedDeposit;
 }
 
 }
